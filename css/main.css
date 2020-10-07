@@ -1,0 +1,543 @@
+/* 
+    Arthur Hoeke
+    Rijk Vogels
+*/
+
+.dark-theme {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+}
+b {
+    font-weight: 800;
+}
+
+.header-background-image {
+    background-image: url("../images/header.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+header > nav {
+    padding-top: 36px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+header .left-container {
+    display: flex;
+}
+header  .left-container > * {
+    margin: 0 40px 0 35px;
+}
+header .left-container > a {
+    margin-top: 5px;
+}
+header .right-container > a p {
+    background-color: #E50914;
+    margin: 0 35px 0 40px;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+header .header-content {
+    padding: 200px 0;
+}
+header .header-content > * {
+    margin-bottom: 36px;
+    color: #FFFFFF;
+}
+header .header-content > p {
+    opacity: 56%;
+}
+header .header-content > a {
+    display: flex;
+}
+header .header-content > a  p {
+    font-size: 26px;
+    background-color: #E50914;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+header .header-content > a p:hover, header .right-container > a p:hover {
+    background-color: #AF0009;
+    cursor: pointer;
+}
+header .header-title-red {
+    color: #E50914;
+}
+header .header-dropdown {
+    z-index: 1;
+}
+header .header-dropdown > p {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px 35px;
+    border-radius: 5px;
+}
+header .header-dropdown-content {
+    display: none;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    overflow: visible;
+}
+header .header-dropdown:hover {
+    opacity: 56%;
+}
+header .header-dropdown:hover > .header-dropdown-content {
+    display: flex;
+}
+header .header-dropdown:hover > p {
+    background-color: #C7C7C7;
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+header .header-dropdown-content > a {
+    padding: 5px 0 5px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E7E7E7;
+    text-align: center;
+    cursor: pointer;
+}
+header .header-dropdown-content > a:hover {
+    opacity: 90%;
+}
+header .header-dropdown-content > a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+header.detailpage-header {
+    display: flex;
+    align-items: center;
+}
+
+@media print, screen and (max-width: 700px) {
+    header > nav {
+        flex-direction: column-reverse;
+    }
+    header .left-container > a {
+        display: none;
+    }
+    header .header-dropdown > p {
+        padding: 10px 45px;
+    }
+    header .right-container > a {
+        display: flex;
+    }
+    header .right-container > a p {
+        margin: 0 40px 0 35px;
+        padding: 10px 45px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    header .header-dropdown:hover {
+        opacity: 100%;
+    }
+    header .header-content {
+        padding: 100px 0;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    text-align: center;
+}
+footer  a {
+    font-size: 0.75em;
+    padding: 25px 0 0;
+}
+footer a:last-child {
+    padding-bottom: 25px;
+    color: #393939;
+}
+footer.detailpage-footer {
+    background-color: #141414;
+    margin-top: 115px;
+}
+@media print, screen and (max-width: 600px) {
+    footer a {
+        padding: 5px;
+    }
+    footer a:first-child {
+        padding-top: 25px;
+    }
+}
+
+main.homepage .main-slogan-container h2 span {
+    color: #E50914;
+}
+@media print, screen and (max-width: 1200px) {
+    main.homepage .main-slogan-container h2 {
+        margin-bottom: 35px;
+    }
+}
+main.homepage .main-section-container {
+    background-color: #F9F9F9;
+}
+main.homepage .main-section-container > div > div > div {
+    padding: 0 calc(25px / 2);
+}
+main.homepage .main-section-container > div > div:first-child > div {
+    padding: 0 25px 0 0;
+}
+main.homepage .main-section-container > div > div:last-child > div {
+    padding: 0 0 0 25px;
+}
+main.homepage .main-section-container h3 {
+    margin: 35px 0;
+}
+main.homepage .main-section-container p {
+    margin-bottom: 35px;
+}
+@media print, screen and (max-width: 600px) {
+    main.homepage .main-section-container > div > div > div, main.homepage .main-section-container > div > div:last-child > div {
+        padding: 0;
+    }
+    main.homepage .main-section-container h3 {
+        margin: 15px 0;
+    }
+}
+
+main.detailpage {
+    padding-top: 50px;
+    min-height: 60vh;
+}
+main.detailpage .thumbnail {
+    background-image: url("../images/frontpage-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    position: relative;
+}
+main.detailpage .thumbnail button {
+    width: 75px; height: 75px;
+    background-color: #DE1818;
+    position: absolute;
+    margin-top: 75%; margin-left: 90%;
+    color: #FFFFFF;
+}
+main.detailpage article {
+    margin-left: 75px;
+    position: relative;
+}
+main.detailpage > section {
+    height: 100%;
+    min-height: 600px;
+}
+main.detailpage article .rating {
+    position: absolute;
+    right: 0; top: 0;
+}
+main.detailpage article .rating i {
+    color: #F2C108;
+}
+main.detailpage article h3 {
+    font-weight: 300;    
+    font-family: 'Lora', serif;
+}
+main.detailpage article p {
+    color: #393939;
+}
+main.detailpage article nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #191919;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+main.detailpage article nav a {
+    color: #393939;
+}
+main.detailpage article nav a.active {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+main.detailpage article nav a.active::after {
+    border-bottom: 2px solid #DE1818;
+    display: block;
+    content: '';
+    margin-top: 10px;
+}
+main.detailpage article .description p {
+    color: #FFFFFF;
+}
+main.detailpage article .cast {
+    margin-top: 25px;
+}
+main.detailpage article .cast table tr td:first-of-type {
+    color: #393939;
+    padding-right: 50px;
+}
+main.detailpage article .slideshow {
+    display: flex;
+    margin-top: 25px;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+}
+main.detailpage article .slideshow img {
+    max-width: 250px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+main.detailpage article .slideshow::-webkit-scrollbar {
+    width: 10px;
+}
+main.detailpage article .slideshow::-webkit-scrollbar-track {
+    background-color: #212121;
+    border-radius: 15px;
+}
+main.detailpage article .slideshow::-webkit-scrollbar-thumb {
+    background-color: #1A1A1A;
+    border-radius: 15px;
+}
+main.detailpage article .slideshow::-webkit-scrollbar-thumb:hover {
+    background-color: #141414;
+}
+@media print, screen and (min-width: 1200px) {
+    main.detailpage article h2 {
+        font-size: 20px;
+    }
+    main.detailpage article h3 {
+        font-size: 40px;
+    }
+    main.detailpage article p, main article .cast table {
+        font-size: 16px;
+    }
+    main.detailpage article nav a {
+        font-size: 18px;
+    }
+}
+@media print, screen and (max-width: 1023px) {
+    main.detailpage article {
+        margin-left: initial;
+    }
+    main.detailpage .thumbnail {
+        width: 100%;
+        height: 255px;
+    }
+    main.detailpage .thumbnail button {
+        margin-top: 35%;
+        margin-left: 90%;
+    }
+    main.detailpage article {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+    main.detailpage .hide {
+        display: none;
+    }
+}
+
+main.loginpage {
+    min-height: 68vh;
+}
+main.loginpage form {
+    max-width: 450px;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+main.loginpage form > .password-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+main.loginpage form > .login-container-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+main.loginpage form > .login-container-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+}
+main.loginpage a:link {
+    color: #E50914;
+}
+main.loginpage form > .password-container input {
+    width: 40%;
+}
+
+main.loginpage .loginBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main.browsepage .release-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main.browsepage .explore-image {
+    position: relative;
+    width: 100%;
+    height: 75%;
+}
+main.browsepage .explore-image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: 80%;
+}
+main.browsepage .explore-image p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+main.browsepage .explore-image p small {
+    font-weight: 300;
+    font-size: 12px;
+}
+main.browsepage .explore-image p {
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+}
+main.browsepage .big-thumbnail-container {
+    height: 500px;
+}
+main.browsepage .big-thumbnail-container  .explore-image {
+    width: 100%;
+    height: 100%;
+}
+main.browsepage .big-thumbnail-container  p {
+    z-index: 2;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+main.browsepage .big-thumbnail-container  p small {
+    font-weight: 500;
+    font-size: 2rem;
+}
+main.browsepage .big-thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80%;
+}
+main.browsepage h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main.browsepage .recommended-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0px 0px 8px #000000;
+}
+main.browsepage .recommended-container .explore-image img {
+    height: 100%;
+}
+main.browsepage .recommended-container .explore-image {
+    width: 30%;
+    height: 275px;
+}
+
+@media print, screen and (max-width: 1023px) {
+    main.browsepage .release-container .explore-image img {
+        height: 100%;
+        object-position: 35%;
+    }
+
+    main.browsepage .recommended-container {
+        flex-direction: column;
+    }
+
+    main.browsepage .recommended-container .explore-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+main.contactpage {
+    min-height: 60vh;
+}
+main.contactpage form, main.contactpage > div > div {
+    margin: 15px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 15px;
+}
+main.contactpage form {
+    margin-right: 15px; padding: 15px;
+}
+main.contactpage > div > div {
+    margin-left: 15px; padding: 15px;
+}
+main.contactpage .contact-container > div > div {
+    margin-top: 7.5px;
+}
+
+main.homepage .main-slogan-container, main.browsepage, main.contactpage {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+main.loginpage form > .login-container-bottom button, main.contactpage form > .form-container-bottom button {
+    background-color: #E50914;
+    font-weight: bold;
+    color: white;
+    padding: 12px 60px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+main.loginpage input[type=text], input[type=email], input[type=password], main.contactpage input[type=text], input[type=email], input[type=textarea] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border: 2px solid #b5b5b5;
+    border-radius: 15px;
+  }
+ main.loginpage input[type=text]:focus, input[type=password]:focus, main.contactpage input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+@media print, screen and (min-width: 1200px) {
+    main.loginpage form h2 {
+        font-size: 3rem
+    }
+    main.loginpage form > .login-container-head p, main.contactpage form > .form-container-head p {
+        font-size: 1.2rem;
+    }
+    main.loginpage form > .login-container-bottom p, main.contactpage form > .form-container-bottom p {
+        font-size: 1rem;
+    }
+    main.loginpage form > .login-container-bottom a, main.contactpage form > .form-container-bottom a {
+        font-size: .85rem;
+    }
+    main.loginpage form > .login-container-bottom button, main.contactpage form > .form-container-bottom button {
+        font-size: 1rem;
+    }
+}

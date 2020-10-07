@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/**
+ *   Default CSS styling.
+ *
+ *   @Creator    Rijk Vogels.
+ *   @Created    17-12-2019
+ *   @Updated    17-09-2020
+ */
+
+/*
+* Global font size and family.
+*/
+p, .p, a, .a, body {
+    font: 400 22px "Raleway","Times New Roman",Times, serif;
+}
+h1, .h1 {
+    font: 400 55px "Raleway","Times New Roman",Times, serif;
+}
+h2, .h2 {
+    font: 700 28.6px "Raleway","Times New Roman",Times, serif;
+}
+h3, .h3 {
+    font: 700 31.2px "Raleway","Times New Roman",Times, serif;
+}
+
+/* Media screen large font size. */
+@media print, screen and (min-width: 64em) {
+    p, .p, a, .a, body {font-size: 19px;}
+    h1, .h1 {font-size: 68.7px;}
+    h2, .h2 {font-size: 38px;}
+    h3, .h3 {font-size: 28.6px;}
+}
+
+/*
+* Global grid container.
+*/
+.grid-container {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+}
+/* For large screen size */
+@media print, screen and (min-width: 64em) {
+    .grid-container {
+        max-width: 1420px;
+    }
+}
+
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+.cell {
+    flex: 0 0 auto;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+/* Media screen size default. (small) */
+.small-0 {display: none;}
+.grid-x > .small-1 {width: calc(100% / 12 * 1);}
+.grid-x > .small-2 {width: calc(100% / 12 * 2);}
+.grid-x > .small-3 {width: calc(100% / 12 * 3);}
+.grid-x > .small-4 {width: calc(100% / 12 * 4);}
+.grid-x > .small-5 {width: calc(100% / 12 * 5);}
+.grid-x > .small-6 {width: calc(100% / 12 * 6);}
+.grid-x > .small-7 {width: calc(100% / 12 * 7);}
+.grid-x > .small-8 {width: calc(100% / 12 * 8);}
+.grid-x > .small-9 {width: calc(100% / 12 * 9);}
+.grid-x > .small-10 {width: calc(100% / 12 * 10);}
+.grid-x > .small-11 {width: calc(100% / 12 * 11);}
+.grid-x > .small-12 {width: calc(100% / 12 * 12);}
+
+/* Media screen size medium. */
+@media print, screen and (min-width: 40em) {
+    .small-0 {display: block;}
+    .medium-0 {display: none;}
+    .grid-x > .medium-1 {width: calc(100% / 12 * 1);}
+    .grid-x > .medium-2 {width: calc(100% / 12 * 2);}
+    .grid-x > .medium-3 {width: calc(100% / 12 * 3);}
+    .grid-x > .medium-4 {width: calc(100% / 12 * 4);}
+    .grid-x > .medium-5 {width: calc(100% / 12 * 5);}
+    .grid-x > .medium-6 {width: calc(100% / 12 * 6);}
+    .grid-x > .medium-7 {width: calc(100% / 12 * 7);}
+    .grid-x > .medium-8 {width: calc(100% / 12 * 8);}
+    .grid-x > .medium-9 {width: calc(100% / 12 * 9);}
+    .grid-x > .medium-10 {width: calc(100% / 12 * 10);}
+    .grid-x > .medium-11 {width: calc(100% / 12 * 11);}
+    .grid-x > .medium-12 {width: calc(100% / 12 * 12);}
+}
+
+/* Media screen size large. */
+@media print, screen and (min-width: 64em) {
+    .small-0, .medium-0 {display: block;}
+    .large-0 {display: none;}
+    .grid-x > .large-1 {width: calc(100% / 12 * 1);}
+    .grid-x > .large-2 {width: calc(100% / 12 * 2);}
+    .grid-x > .large-3 {width: calc(100% / 12 * 3);}
+    .grid-x > .large-4 {width: calc(100% / 12 * 4);}
+    .grid-x > .large-5 {width: calc(100% / 12 * 5);}
+    .grid-x > .large-6 {width: calc(100% / 12 * 6);}
+    .grid-x > .large-7 {width: calc(100% / 12 * 7);}
+    .grid-x > .large-8 {width: calc(100% / 12 * 8);}
+    .grid-x > .large-9 {width: calc(100% / 12 * 9);}
+    .grid-x > .large-10 {width: calc(100% / 12 * 10);}
+    .grid-x > .large-11 {width: calc(100% / 12 * 11);}
+    .grid-x > .large-12 {width: calc(100% / 12 * 12);}
+}
