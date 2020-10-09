@@ -35,6 +35,14 @@ header  .left-container > * {
 header .left-container > a {
     margin-top: 5px;
 }
+header .left-container .header-home-button {
+    height: 70px;
+    margin-top: 0;
+}
+header .left-container .header-home-button > img {
+    height: calc(60% + 27px);
+    transform: translateY(-20px);
+}
 header .right-container > a p {
     background-color: #E50914;
     margin: 0 35px 0 40px;
@@ -59,6 +67,9 @@ header .header-content > a  p {
     background-color: #E50914;
     padding: 10px 50px;
     border-radius: 5px;
+}
+header .header-content h1 > span > img {
+    transform: translateY(-5px);
 }
 header .header-content > a p:hover, header .right-container > a p:hover {
     background-color: #AF0009;
@@ -171,6 +182,9 @@ footer.detailpage-footer {
 
 main.homepage .main-slogan-container h2 span {
     color: #E50914;
+}
+main.homepage .main-slogan-container img {
+    border-radius: 3px;
 }
 @media print, screen and (max-width: 1200px) {
     main.homepage .main-slogan-container h2 {
@@ -490,12 +504,27 @@ main.contactpage form, main.contactpage > div > div {
 }
 main.contactpage form {
     margin-right: 15px; padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main.contactpage form > * {
+    
 }
 main.contactpage > div > div {
     margin-left: 15px; padding: 15px;
 }
 main.contactpage .contact-container > div > div {
     margin-top: 7.5px;
+}
+main.contactpage .contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+main.contactpage .contact-container h2, main.contactpage form h2 {
+    margin: 25px 0;
 }
 
 main.homepage .main-slogan-container, main.browsepage, main.contactpage {
@@ -509,7 +538,7 @@ main.loginpage form > .login-container-bottom button, main.contactpage form > .f
     padding: 12px 60px;
     border-radius: 10px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 main.loginpage input[type=text], input[type=email], input[type=password], main.contactpage input[type=text], input[type=email], input[type=textarea] {
     width: 80%;
