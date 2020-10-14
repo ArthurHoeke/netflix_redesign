@@ -17,7 +17,12 @@
         <link rel="stylesheet" href="./css/reset.css" type="text/css">
         <link rel="stylesheet" href="./css/responsive.css" type="text/css">
         <link rel="stylesheet" href="./css/main.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        
+        <!-- Prefetch images for the header to remove sharp transitions on the first load. -->
+        <link rel="preload" as="image" href="images/header/header.jpg">
+        <link rel="preload" as="image" href="images/header/header-2.jpg">
+        <link rel="preload" as="image" href="images/header/header-3.jpg">
+        <link rel="preload" as="image" href="images/header/header-4.jpg">
     </head>
     <body>
         <header class="header-background-image">
@@ -28,9 +33,9 @@
                         <p>Menu</p>
                         <div class="header-dropdown-content">
                             <a href="./pages/contact.html">Contact</a>
-                            <a href="#">Account</a>
-                            <a href="#">FAQ</a>
-                            <a href="#">Privacy</a>
+                            <a href="#" class="header-dropdown-disabled">Account</a>
+                            <a href="#" class="header-dropdown-disabled">FAQ</a>
+                            <a href="#" class="header-dropdown-disabled">Privacy</a>
                         </div>
                     </div>
                     <a href="./pages/browse.html">Browse</a>
@@ -85,10 +90,10 @@
         </main>
         <footer>
             <div class="grid-container grid-x">
-                <a class="small-12 medium-4">Contact</a>
-                <a class="small-12 medium-4">Bedrijfsgegevens</a>
-                <a class="small-12 medium-4">Kijk nu gratis</a>
-                <a class="small-12">Netflix Nederland</a>
+                <a class="small-12 medium-4"><span>Contact</span></a>
+                <a class="small-12 medium-4"><span>Bedrijfsgegevens</span></a>
+                <a class="small-12 medium-4"><span>Kijk nu gratis</span></a>
+                <a class="small-12"><span>Netflix Nederland</span></a>
             </div>
         </footer>
     </body>
