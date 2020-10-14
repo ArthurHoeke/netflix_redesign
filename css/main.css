@@ -3,6 +3,18 @@
     Rijk Vogels
 */
 
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype'),
+         url('../fonts/Raleway-Bold.ttf') format('truetype'),
+         url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url('../fonts/Lora-Bold.ttf') format('truetype');
+}
+
 .dark-theme {
     background-color: #0A0A0A;
     color: #FFFFFF;
